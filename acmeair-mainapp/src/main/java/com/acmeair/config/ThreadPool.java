@@ -29,7 +29,7 @@ public class ThreadPool {
             fixedThreadPool.execute(new Runnable() {
                 @Override
                 public void run() {
-                    while(true){
+                  //  while(true){
                         System.out.println("dangqianxitongshijian： " + System.nanoTime());
                         String result = HttpRequest.sendGet(sessionid,System.nanoTime());
                         System.out.println(Thread.currentThread() + " --- " + result);
@@ -38,7 +38,7 @@ public class ThreadPool {
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-                    }
+                 //   }
                 }
             });
         }
