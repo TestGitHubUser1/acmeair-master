@@ -16,8 +16,8 @@ customer_db1:
   container_name: customer_db1
   image: mongo
   net: ${NETWORK}
-  cpuset: "11,12,13,14"
-  mem_limit: 8G
+  cpuset: "12,13,14"
+  mem_limit: 6G
 
 flight_db1:
   container_name: flight_db1
